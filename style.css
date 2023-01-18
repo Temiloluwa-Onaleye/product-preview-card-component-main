@@ -115,7 +115,7 @@ button:hover{
     main{
         display: flex;
         flex-direction: column;
-        margin: 0em 0em;
+        margin: 0;
         padding: 1.5em;
     }
 
