@@ -10,24 +10,25 @@ body{
 
 .main{
     display: flex;
-    max-width: 43.75em;
-    margin: 7em auto;
+    max-width: 37.5em;
+    margin: 9em auto;
    
 }
 
-img{
+.product-img{
     object-fit: contain;
-    border: 1px solid white;
+    
     border-top-left-radius: 0.8em;
-    border-bottom-left-radius: 0.8em;
-    
-    
+    border-bottom-left-radius: 0.8em;   
+}
+.product-img-two{
+    display: none;
 }
 .product-description{
     background-color: hsl(0, 0%, 100%);
     border-top-right-radius: 0.8em;
      border-bottom-right-radius: 0.8em;
-     padding: 2em;
+     padding: 2.5em 2em;
 }
 
 .product-description > h1 {
@@ -37,33 +38,110 @@ img{
     font-weight: 700;
     letter-spacing: 0.3em;
     color: hsl(228, 12%, 48%);
+    margin-bottom: 1.5em;
 }
 
 .product-description>h2 {
-    font-size: 1.7em;
+    font-size: 1.8em;
     font-family: "Montserrat", serif;
     font-weight: 700;
     color: hsl(212, 21%, 14%);
+    margin-bottom: 1em;
+    /* max-width: 8.625em; */
 }
  .description {
-    font-size: 1em;
+    font-size: 0.875em;
     font-family: "Montserrat", serif;
     font-weight: 500;
-    letter-spacing: 0.1em;
     color: hsl(228, 12%, 48%);
+    margin-bottom: 1.4em;
+    
 }
 .price {
-    color: hsl(158, 36%, 37%);
+   
+    margin-bottom: 1.5em;
+    display: flex;
+    gap: 0.75em;
+    align-items: center;
+  
 
 }
-span{
-    text-decoration: line-through;
+.new{
+font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 1.9em;
+    color: hsl(158, 36%, 37%);
 }
-small{
+.old{
     color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-weight: 700;
+        font-size: 0.7em;
+        
 }
 button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
     background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: "Montserrat",serif;
+    font-size: 0.875em;
+    font-weight: 500;
+    padding: 1em 4em;
+    border: 1px solid hsl(158, 36%, 37%);
+    border-radius: 0.4em;   
 }
+
+button:hover{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: hsl(156, 89%, 11%);
+    color: white;
+    font-family: "Montserrat", serif;
+    font-size: 0.875em;
+    font-weight: 500;
+    padding: 1em 4em;
+    border: 1px solid hsl(158, 36%, 37%);
+    border-radius: 0.4em;
+    transition: 900ms;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 0em 0em;
+        padding: 1.5em;
+    }
+
+    .product-img{
+        display: none;
+    }
+        .product-img-two {
+            object-fit: contain;
+            
+            border-top-left-radius: 0.8em;
+            border-top-right-radius: 0.8em;
+            width: 100%;
+            display: block;
+    
+    
+        }
+                .product-description {
+                    border-top-right-radius: 0em;
+                    border-bottom-right-radius: 0.8em;
+                    border-bottom-left-radius: 0.8em;
+                            padding: 2em 1.2em;
+                        
+                
+                }
+                                
+}
+
 
 
